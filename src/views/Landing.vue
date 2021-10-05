@@ -12,7 +12,7 @@
         href="#"
         class="rounded-xl hover:bg-black hover:text-white transform transition hover:scale-90 duration-300 ease-in-out relative block px-3 h-32 bg-red-700 text-white text-center tracking-widest uppercase text-xs font-bold pt-8 pb-6 flex flex-col items-center justify-between"
       >
-        <span>menu</span>
+        <span>Blogs</span>
         <div class="flex items-end justify-center">
           <span class="block h-5 w-1 bg-white"></span>
           <span class="block h-8 w-1 bg-white mx-1"></span>
@@ -38,7 +38,7 @@
         >
           Mich Digital leverages world-class digital marketing expertise that is
           meticulously curated to business or organization's challenge at hand.
-          Our strength lies in applying applying insight and creativity in a
+          Our strength lies in applying insight and creativity in a
           human element, powered by data analytics, market research and digital
           technology. We love data, we love numbers and we only care about
           delivering results.
@@ -57,17 +57,19 @@
     </div>
 
 
+
     <!-- SPACER / -->
     <div class="w-full h-24 border-black bg-white flex justify-end">
-      <div class="w-64 bg-red-700"></div>
+      <div class="w-64 bg-red-700 mt-10"></div>
     </div>
     <!-- / SPACER -->
 
     <div class="w-full flex items-center justify-start relative">
       <div class="w-auto md:w-3/12"></div>
 
-      <div class="group w-full md:w-8/12 servicesBG py-12 relative flex">
+      <div class="group md:w-8/12 w-full servicesBG py-12 relative flex">
         <a
+          @click="modal"
           href="#"
           class="group border-2 border-red-600 shadow-lg hover:shadow-2xl transform transition hover:scale-90 duration-300 ease-in-out block relative z-10 bg-gray-50 h-full w-full px-12 md:px-0 md:w-6/12 py-24 md:-ml-24"
         >
@@ -82,56 +84,9 @@
             Search Engine Optimization
           </p>
         </a>
+
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
-        >
-          <div class="border-4 border-white h-full px-6">
-            <!-- This example requires Tailwind CSS v2.0+ -->
-            <blockquote class="mt-6 md:flex-grow md:flex md:flex-col">
-              <div class="relative text-lg font-medium text-white md:flex-grow">
-                <p class="relative">
-                  Mich Digital identifies key strategies needed to drive
-                  business outcomes. It then overlays innovative and scalable
-                  technology over each strategy which ultimately optimizes
-                  campaigns. Our technology suite is designed to maximize search
-                  account performance.
-                </p>
-              </div>
-            </blockquote>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-1/12 absolute top-0 right-0 h-full bg-red-700"></div>
-    </div>
-
-    <!-- SPACER / -->
-    <div class="w-full h-24 border-black bg-white flex justify-end">
-      <div class="w-64 bg-red-700"></div>
-    </div>
-    <!-- / SPACER -->
-
-    <div class="w-full flex items-center justify-start relative">
-      <div class="w-auto md:w-3/12"></div>
-
-      <div class="group w-full md:w-8/12 servicesBG py-12 relative flex">
-        <a
-          href="#"
-          class="group border-2 border-red-600 shadow-lg hover:shadow-2xl transform transition hover:scale-90 duration-300 ease-in-out block relative z-10 bg-gray-50 h-full w-full px-12 md:px-0 md:w-6/12 py-24 md:-ml-24"
-        >
-          <h3
-            class="transform group-hover:opacity-100 group-hover:translate-x-20 transition ease-in-out duration-700 delay-200 ml-10 mb-2 uppercase text-gray-800 text-3xl font-bold tracking-widest"
-          >
-            SEO
-          </h3>
-          <p
-            class="transform group-hover:opacity-100 group-hover:translate-x-20 transition ease-in-out duration-700 delay-500 ml-8 text-lg md:text-xl font-serif text-gray-400"
-          >
-            Search Engine Optimization
-          </p>
-        </a>
-        <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -179,7 +134,7 @@
           </p>
         </a>
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -227,7 +182,7 @@
           </p>
         </a>
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -274,7 +229,7 @@
           </p>
         </a>
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -322,7 +277,7 @@
           </p>
         </a>
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -370,7 +325,7 @@
           </p>
         </a>
         <div
-          class="p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
+          class="hidden sm:block p-14 absolute top-0 right-0 block w-3/5 h-full object-cover"
         >
           <div class="border-4 border-white h-full px-6">
             <!-- This example requires Tailwind CSS v2.0+ -->
@@ -393,7 +348,7 @@
     </div>
 
     <!-- SPACER / -->
-    <div class="w-full h-24 border-black bg-white flex justify-end">
+    <div class="w-full h-10 sm:h-24  border-black bg-white flex justify-end">
       <div class="w-64 bg-red-700"></div>
     </div>
     <!-- / SPACER -->
@@ -774,21 +729,30 @@
       <div class="bg-white max-w-6xl mx-auto py-12">
       <div>
       </div>
-        <div class="flex justify-between md:px-24 relative">
-          <a
-            href="#"
-            class="block mb-2 uppercase text-gray-800 text-lg font-bold tracking-widest hover:text-red-600"
-            >+254 702 624784
-            <p class="flex text-xs text-center italic text-gray-400"><span class="mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg></span> 9-5pm Mon-Fri</p>
-            </a
-          >
-          <a
-            href="#"
-            class="block uppercase text-gray-800 text-lg font-bold tracking-widest hover:text-red-600"
-            >info@michdigital.co.ke <br>
-            <p class="flex text-xs text-center italic text-gray-400"><span class="mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path></svg></span> Replies within an hour</p>
-            </a
-          >
+
+        <div class="flex justify-between px-24 relative">
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+              <a
+                href="#"
+                class="block mb-2 uppercase text-gray-800 text-lg font-bold tracking-widest hover:text-red-600"
+                >+254 702 624784
+                <p class="flex text-xs text-center italic text-gray-400"><span class="mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path></svg></span> 9-5pm Mon-Fri</p>
+                </a
+              >
+            </div>
+
+            <div class="">
+              <a
+                href="#"
+                class="block mb-2 uppercase text-gray-800 text-lg font-bold tracking-widest hover:text-red-600"
+                >info@michdigital.co.ke <br>
+                <p class="flex text-xs text-center italic text-gray-400"><span class="mr-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path><path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path></svg></span> Replies within an hour</p>
+                </a
+              >
+            </div>
+
 
           <div class="flex space-x-6">
             <a
@@ -869,6 +833,8 @@
               </svg>
             </a>
           </div>
+          </div>
+
         </div>
 
         <div class="flex py-12">
@@ -878,7 +844,7 @@
         </div>
 
         <div
-          class="flex flex-wrap justify-between px-24 text-sm font-serif text-gray-500"
+          class="flex flex-wrap sm:px-24 px-20 justify-center text-xs sm:text-sm font-serif text-gray-500"
         >
           <div class="w-full md:flex-1">&copy; 2021 copyright Mich Digital</div>
           <div class="w-full md:flex-1 md:text-right">
@@ -894,6 +860,11 @@
 <script>
 export default {
   name: "Landing",
+  methods: {
+    modal(){
+      console.log('done')
+    }
+  },
 };
 </script>
 
